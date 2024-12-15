@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/login.js" defer></script>
+        <title>shopping cart</title>
+    
+    </head>
+    <body class="container">
+       <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-headphones"></i><span>headphone</span>
+            </div>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+       </header>
+       <!-- /////////// -->
+        <div class="blur-bg-overlay"></div>
+        <div class="form-log">
+            <span class="close-btn"><i class="fas fa-times"></i></span>
+            <div class="form-box login">
+                <div class="form-details">
+                    <h2>welcome back</h2>
+                    <p>please log in your personal information to stay connected with us.</p>
+                </div>
+                <div class="form-content">
+                    <div class="errorlogin"></div>
+                    <h2>LOGIN</h2>
+                    <form action="#">
+                        <div class="input-field">
+                            <div id="errorloginU"></div>
+                            <input type="text" placeholder="Enter your Email" id="username" required>
+                        </div>
+                        <div class="input-field">
+                            <div id="errorloginP"></div>
+                            <input type="password" placeholder="Enter your Password" id="password" required>
+                        </div>
+                        <a href="#" class="forgot-pass">forgot password?</a>
+                        <button type="submit" id="goFromLogin"> log in</button>
+                    </form>
+                    <div class="bottom-link">
+                        don't have an account
+                        <a href="#" id="signup-link">signUp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box signup" id="signup">
+                <div class="form-details">
+                    <h2>create account</h2>
+                    <p>to become a part of our community, please sign up your personal information.</p>
+                </div>
+                <div class="form-content">
+                    <h2>SIGNUP</h2>
+                    <form action="#">
+                        <div class="input-field">
+                            <div id="errorE"></div>
+                            <input type="email" placeholder="Enter your Email" id="emailSign" required>
+                        </div>
+                        <div class="input-field">
+                            <div id="errorP"></div>
+                            <input type="password" placeholder="create Password" id="passwordSign" required>
+                        </div>
+                        <div class="input-field">
+                            <div id="errorCP"></div>
+                            <input type="password" placeholder="Consfirm Password.." id="ConsfirmPass"/>
+                        </div>
+                        <div class="policy-text">
+                            <input type="checkbox" id="policy">
+                            <label for="policy">
+                                i agree the 
+                                <a href="#">terms & conditions</a>
+                            </label>
+                        </div>
+                        <button type="submit" id="goFromSign"> sign up</button>
+                    </form>
+                    <div class="bottom-link">
+                        already have an account
+                        <a href="#" id="login-link">login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
